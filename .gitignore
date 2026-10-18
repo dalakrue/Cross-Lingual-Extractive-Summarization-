@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Trained artifacts — regenerate with the pipeline, do not commit binaries.
+# (Keeps the repo small and avoids stale models.)
+*.pkl
+*.model
+results/sentence_vectors.csv
+results/improved_sentence_vectors.csv
+results/article_split.csv
+# Keep the committed result tables:
+!results/model_comparison.csv
+!results/improved_model_comparison.csv
+!results/summarization_selection_results.csv
+!results/improved_summarization_selection_results.csv
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
